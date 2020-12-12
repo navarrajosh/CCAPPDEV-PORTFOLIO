@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Edit.css">
+  <link rel="stylesheet" href="Portfolio.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="icon"
+    href="https://firebasestorage.googleapis.com/v0/b/ccapdev-portfolio.appspot.com/o/Pictures%2Flogin-logo.png?alt=media&token=57122f4b-e811-493f-a67c-66214fa1e5c9">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wesume</title>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#" style="color: white;">Wesume.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#content" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="content" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="#" class="nav-link log-out" data-toggle="modal" data-target="#SignIn"
+            style="color: white;">
+            Sign In
+          </a></li>
+        <li class="nav-item"><a href="#" class="nav-link log-in" id="Logout" style="color: white;">
+            Logout
+          </a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="SignIn" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="Login">
+            <div class="form-group">
+              <label for="inEmail">Email address</label>
+              <input type="email" class="form-control" id="loginEmail" placeholder="Enter email">
+              <div class="form-group">
+                <label for="inPassword">Password</label>
+                <input type="password" class="form-control" id="loginPassword" placeholder="Enter Password">
+              </div>
+            </div>
+            <button type="submit" id="SignIn" class="btn btn-Light">Sign In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--FORMS-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 log-in">
+        <form id="School-Data">
+          <h1>School</h1>
+          <div class="form-group">
+            <label for="inLevel">Level</label>
+            <input type="text" class="form-control" id="inLevel" placeholder="Enter School Level">
+          </div>
+          <div class="form-group">
+            <label for="inSchool">School Name</label>
+            <input type="text" class="form-control" id="inSchool" placeholder="Enter School Name">
+          </div>
+          <div class="form-group">
+            <label for="imgSchool">School Image</label>
+            <input type="text" class="form-control" id="imgSchool" placeholder="Image Link">
+          </div>
+          <div class="form-group">
+            <label for="inYear">Year</label>
+            <input type="text" class="form-control" id="inYear" placeholder="Enter School Level">
+          </div>
+          <div class="form-group">
+            <label for="inLink">Link</label>
+            <input type="text" class="form-control" id="inLink" placeholder="Enter School Level">
+          </div>
+          <div class="form-group">
+            <label for="inAbb">Abbreviation</label>
+            <input type="text" class="form-control" id="inAbb" placeholder="Enter School Level">
+          </div>
+          <div class="add">
+            <button type="submit" id="AddSchool" class="btn btn-light">Add</button>
+          </div>
+        </form>
+      </div>
+
+
+
+
+
+      <div class="col-md-3 col-sm-12 log-in">
+        <form id="Contacts-Data">
+          <h1>Contacts</h1>
+          <div class="form-group">
+            <label for="cLink">Link</label>
+            <input type="text" class="form-control" id="cLink" placeholder="Enter Username">
+          </div>
+          <div class="form-group">
+            <label for="IconImg">Icon</label>
+            <input type="text" class="form-control" id="IconImg" placeholder="Image Link">
+          </div>
+          <div class="add">
+            <button type="submit" id="AddSchool" class="btn btn-light">Add</button>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="col-md-3 col-sm-12 log-in">
+        <form id="Works-Data">
+          <h1>Works</h1>
+          <div class="form-group">
+            <label for="wImage">Image</label>
+            <input type="text" class="form-control" id="wImage" placeholder="Image Link">
+          </div>
+          <div class="add">
+            <button type="submit" id="AddSchool" class="btn btn-light">Add</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-3 col-sm-12 log-in">
+        <form id="Me-Data">
+          <h1>About Me</h1>
+          <div class="form-group">
+            <label for="inText">Text</label>
+            <input type="text" class="form-control" id="inText" placeholder="Text">
+          </div>
+          <div class="add">
+            <button type="submit" id="AddSchool" class="btn btn-light">Add</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-3 col-sm-12 log-in">
+        <form id="Organizations-Data">
+          <h1>Orgs</h1>
+          <div class="form-group">
+            <label for="Orglogo">Image</label>
+            <input type="text" class="form-control" id="Orglogo" placeholder="Image Link">
+          </div>
+          <div class="add">
+            <button type="submit" id="AddSchool" class="btn btn-light">Add</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <section id="added-data" class="log-in">
+    <div class="card-body" style="border: 5rem;">
+
+      <h1 style="color: white; text-align: center;">Remove Data Added</h1>
+      <div class="container">
+        <h1 style="color: white; padding-top: 5rem;">About Me Field</h1>
+        <div class="text">
+          <div class=" row" style="width: 100%;">
+            <div class="col-md-6 text1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 style="color: white; padding-top: 5rem;">Work Field</h1>
+      <div class="gallery" id="gallery">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 style="color: white; padding-top: 5rem;">Organizations Field</h1>
+      <div class="container orgcon">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 style="color: white; padding-top: 5rem;">Education Field</h1>
+      <div class="flip-cards" style="display: flex;">
+
+      </div>
+    </div>
+
+    <div class="container contactcard">
+      <h1 style="color: white; padding-top: 5rem;">Contacts Field</h1>
+      <div class="card">
+
+        <div class="card-image">
+          <img src="Pictures/contactbg.jpg" class="contactpic" alt="profile one">
+        </div>
+        <!-- <div class="container icons"> -->
+        <ul class="social-icons">
+
+        </ul>
+        <!-- </div> -->
+        <div class="detailscon">
+          <h2>Joseph Navarra
+            <br>
+            <span class="job-title">College Student</span>
+          </h2>
+        </div>
+      </div>
+
+  </section>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+  <script src="https://kit.fontawesome.com/8c90f2def2.js" crossorigin="anonymous"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyDIFVqEbSJtNWljpJou_o35Ukzi191TeYg",
+      authDomain: "ccapdev-portfolio.firebaseapp.com",
+      databaseURL: "https://ccapdev-portfolio.firebaseio.com",
+      projectId: "ccapdev-portfolio",
+      storageBucket: "ccapdev-portfolio.appspot.com",
+      messagingSenderId: "319966248049",
+      appId: "1:319966248049:web:52964591f58c5c0e3d2fd0",
+      measurementId: "G-SZY9JXFHYE"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    db.settings({
+      timestampsInSnapshots: true
+    });
+  </script>
+
+  <script src="index.js"></script>
+  <script src="auth.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Wesume</title>
+  <link rel="stylesheet" href="Portfolio.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="icon"
+    href="https://firebasestorage.googleapis.com/v0/b/ccapdev-portfolio.appspot.com/o/Pictures%2Flogin-logo.png?alt=media&token=57122f4b-e811-493f-a67c-66214fa1e5c9">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- Navigation -->
+
+  <nav class="navbar navbar-expand-lg fixed-top py-3" id="#scroll">
+    <div class="container"><a href="#H" class="navbar-brand">Wesume.</a>
+      <button type="button" data-toggle="collapse" data-target="#content" aria-controls="content" aria-expanded="false"
+        aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+      <div id="content" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="#H" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#E" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#O" class="nav-link">Organizations</a></li>
+          <li class="nav-item"><a href="#W" class="nav-link">Works</a></li>
+          <li class="nav-item"><a href="#A" class="nav-link">About Me</a></li>
+          <li class="nav-item"><a href="#C" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="Edit.html" class="nav-link" target="_blank">Portal</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="H">
+    <div class="jumbotron">
+      <h1 class="display-4"><img src="Pictures/home logo.png" class="logo"></h1>
+      <p class="lead">Hi!!! I'm a student from De La Salle University of Manila.</p>
+      <a class="btn btn-primary btn-lg" href="#A" role="button">Read more</a>
+    </div>
+  </section>
+
+  <!-- Education-->
+  <section id="E">
+    <h1 class="HSec">Education.</h1>
+    <!-- flip-card-container -->
+    <div class="flip-cards" style="display: flex;">
+
+    </div>
+  </section>
+
+  <!-- Organization -->
+
+  <section id="O">
+    <h1 class="HSec">Organizations.</h1>
+    <div class="container orgcon">
+    </div>
+  </section>
+
+  <!-- Works -->
+
+  <section id="W">
+    <h1 class="HSec">Works.</h1>
+    <div class="gallery" id="gallery">
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="A">
+    <h1 class="HSec">Me.</h1>
+    <div class="text">
+      <div class="row" style="width: 100%;">
+        <div class="col-md-5 ">
+          <img src="Pictures/pic3.png" class="mypic2">
+        </div>
+        <div class="col-md-6 text1">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section id="C">
+    <h1 class="HSec">Contacts.</h1>
+    <div class="container contactcon">
+
+      <div class="card-wrapper contactwrapper">
+
+        <div class="card">
+
+          <div class="card-image">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/ccapdev-portfolio.appspot.com/o/Pictures%2Fcontactbg.jpg?alt=media&token=d122d1d3-48f7-4cce-9e8f-f44857b03839"
+              class="contactpic" alt="profile one">
+          </div>
+          <!-- <div class="container icons"> -->
+          <ul class="social-icons">
+
+          </ul>
+          <!-- </div> -->
+          <div class="detailscon">
+            <h2>Joseph Navarra
+              <br>
+              <span class="job-title">College Student</span>
+            </h2>
+          </div>
+        </div>
+      </div><!-- end box wrapper -->
+
+    </div><!-- END container -->
+
+  </section>
+  <footer>
+    <div class="copyright">
+      <p class="footer-copyright">© 2020 Copyright: Joseph Navarra</p>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/8c90f2def2.js" crossorigin="anonymous"></script>
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyDIFVqEbSJtNWljpJou_o35Ukzi191TeYg",
+      authDomain: "ccapdev-portfolio.firebaseapp.com",
+      databaseURL: "https://ccapdev-portfolio.firebaseio.com",
+      projectId: "ccapdev-portfolio",
+      storageBucket: "ccapdev-portfolio.appspot.com",
+      messagingSenderId: "319966248049",
+      appId: "1:319966248049:web:52964591f58c5c0e3d2fd0",
+      measurementId: "G-SZY9JXFHYE"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    db.settings({
+      timestampsInSnapshots: true
+    });
+  </script>
+  <script src="auth.js"></script>
+  <script src="index.js"></script>
+
+
+</body>
+</head>
